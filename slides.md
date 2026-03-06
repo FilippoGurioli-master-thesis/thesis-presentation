@@ -104,8 +104,10 @@ transition: slide-up
 # Solution
 
 - **Unity Frontend** — 3D physics environment
-- **Core Bridge** — FFI + Protocol Buffers
+- **Core Bridge** — <span v-if="$clicks < 1">???</span><span v-click="1">Foreign Function Interface (FFI) + Protocol Buffers</span>
 - **Collektive Backend** — aggregate logic
+
+<p v-click="1" class="mt-4 text-[#2B90B6] font-semibold">But why FFI?</p>
 
 ::right::
 
@@ -116,7 +118,6 @@ graph TD
   A[Unity Frontend]
   B[Core Bridge]
   C[Collektive Backend]
-
   A -->|SensorData| B
   B -->|step| C
   C -->|ActuatorData| B
