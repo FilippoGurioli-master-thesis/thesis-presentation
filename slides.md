@@ -24,19 +24,18 @@ Filippo Gurioli
 </div>
 
 ---
-transition: fade-out
+transition: slide-up
+layout: image-right
+image: https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmFyMWFnbnJpMDNwaGkzOHN1aTJubTJvcG5kOTVzZXVqMjZ2MmI5MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ITRemFlr5tS39AzQUL/giphy.gif
 ---
 
 # Context
 
-- Complex Adaptive Systems
-- Simulators
-- Reality Gap
+Modern computing is shifting from isolated machines to **massively interconnected collectives** — IoT networks, smart cities, drone swarms.
 
-![alt](/reality-gap-spectrum.png)
+These are **Complex Adaptive Systems (CAS)**: thousands of agents coordinating through local interactions, with no central controller.
 
-<!--
--->
+> Testing them requires simulation — but not all simulators are equal.
 
 <style>
 h1 {
@@ -51,12 +50,10 @@ h1 {
 </style>
 
 ---
-transition: slide-left
+transition: fade-out
 ---
 
-# Problem Statement
-
-No good integration between high-fidelity simulators for Complex Adaptive Systems
+# Simulation Landscape
 
 <div class="mt-6 grid grid-cols-[1fr_auto_1fr] gap-8">
 
@@ -79,6 +76,24 @@ No good integration between high-fidelity simulators for Complex Adaptive System
   <p class="text-sm text-center text-gray-400">Aggregate computing support<br/>but simplified, grid-based environments</p>
 </div>
 
+</div>
+
+<!--
+-->
+
+---
+transition: slide-left
+---
+
+# Problem Statement
+
+No good integration between high-fidelity simulators for Complex Adaptive Systems
+
+<div class="flex flex-col items-center gap-4 mt-4">
+  <img src="/reality-gap-spectrum.png" class="w-full object-contain" />
+  <p class="text-center text-gray-400 text-sm">
+    The further right, the more realistic — but the harder to program collective behaviors.
+  </p>
 </div>
 
 ---
@@ -110,6 +125,8 @@ graph TD
 
 </div>
 
+---
+transition: slide-up
 ---
 
 # The Challenge
