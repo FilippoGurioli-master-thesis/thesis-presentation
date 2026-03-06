@@ -2,7 +2,7 @@
 theme: seriph # default
 background: /background.png
 title: Thesis Presentation
-info: My Thesis presentation about Unity-Template-Project, Collektivity, case study and results
+info: My Thesis presentation about Collektivity
 class: text-center
 drawings:
   persist: false
@@ -29,9 +29,11 @@ transition: fade-out
 
 # Context
 
-Complex Adaptive Systems -
-Simulators -
-Reality Gap
+- Complex Adaptive Systems
+- Simulators
+- Reality Gap
+
+![alt](/reality-gap-spectrum.png)
 
 <!--
 -->
@@ -52,9 +54,32 @@ h1 {
 transition: slide-left
 ---
 
-# Problem statement
+# Problem Statement
 
-no good integration between high-fidelity simulators and aggregate computing
+No good integration between high-fidelity simulators for Complex Adaptive Systems
+
+<div class="mt-6 grid grid-cols-[1fr_auto_1fr] gap-8">
+
+<div class="flex flex-col items-center gap-3">
+  <p class="text-center font-semibold text-blue-400">High-Fidelity Simulators</p>
+  <img src="/unity-logo.png" class="h-16 object-contain" />
+  <img src="/gazebo-logo.png" class="h-16 object-contain" />
+  <p class="text-sm text-center text-gray-400">Realistic physics, 3D environments<br/>but no collective programming support</p>
+</div>
+
+<div class="flex items-center justify-center">
+  <div class="h-full w-px bg-[#000000] opacity-80 flex flex-col items-center justify-center relative">
+  </div>
+</div>
+
+<div class="flex flex-col items-center gap-3">
+  <p class="text-center font-semibold text-green-400">CAS Simulators</p>
+  <img src="/alchemist-logo.png" class="h-16 object-contain" />
+  <img src="/netlogo-logo.jpg" class="h-16 object-contain" />
+  <p class="text-sm text-center text-gray-400">Aggregate computing support<br/>but simplified, grid-based environments</p>
+</div>
+
+</div>
 
 ---
 layout: two-cols
@@ -66,7 +91,6 @@ transition: slide-up
 - **Unity Frontend** — 3D physics environment
 - **Core Bridge** — FFI + Protocol Buffers
 - **Collektive Backend** — aggregate logic
-
 
 ::right::
 
