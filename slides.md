@@ -1,6 +1,6 @@
 ---
 theme: seriph # default
-background: background.png
+background: ./background.png
 title: Thesis Presentation
 info: My Thesis presentation about Unity-Template-Project, Collektivity, case study and results
 class: text-center
