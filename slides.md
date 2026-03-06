@@ -206,9 +206,34 @@ A CAS simulation is only meaningful with **enough nodes** — the bridge must be
 
 ---
 
-# Case Study
+# Case Study: Environment-aware Gradient Ascent
 
-Description + video!
+<div class="grid grid-cols-2 gap-8 mt-4">
+
+<div class="flex flex-col justify-center gap-4 text-gray-800">
+  <p>A swarm of nodes must <strong>navigate toward a source</strong> while dynamically avoiding obstacles.</p>
+  <ul class="text-sm flex flex-col gap-2">
+    <li><strong>Collective intelligence</strong> — nodes share source intensity with neighbors to compute the steepest gradient</li>
+    <li><strong>Local obstacle avoidance</strong> — each node independently adjusts trajectory to avoid collisions</li>
+    <li><strong>Neighborhood</strong> — distance-based, within 10 units</li>
+    <li><strong>Frequency</strong> — synchronous rounds at 20Hz</li>
+  </ul>
+  <p class="text-sm text-[#146b8c]">Validated in both a <strong>minimal</strong> and a <strong>rich</strong> environment.</p>
+</div>
+
+<div class="flex items-center justify-center">
+  <!--   src="/case-study.mp4" -->
+<video
+    src="https://media.istockphoto.com/id/532142106/it/video/ronzio-serie.mp4?s=mp4-640x640-is&k=20&c=TL5jXPB3M9uge9c1AZgDxTvb3i2BX9pPsOM4v1i9pLg="
+    class="rounded-lg w-full"
+    autoplay
+    loop
+    muted
+    playsinline
+  />
+</div>
+
+</div>
 
 ---
 
