@@ -132,15 +132,76 @@ transition: slide-up
 
 # The Challenge
 
-The fastest integration
+A CAS simulation is only meaningful with **enough nodes** — the bridge must be fast enough to support them in real-time.
 
-```kt [entrypoint.kt] twoslash
-fun Aggregate<Int>.entrypoint(sensorData: SensorData): ActuatorData
-```
+<div class="mt-4 text-center text-gray-400 text-sm">
+  Every simulation tick, <strong>each node</strong> crosses the bridge:
+</div>
+
+
+<div class="mt-4 grid grid-cols-3 gap-4 text-center">
+  <div class="border border-gray-600 rounded p-3">
+    <p class="text-2xl font-bold text-[#146b8c]">20 Hz</p>
+    <p class="text-sm text-gray-400">execution frequency</p>
+  </div>
+  <div class="border border-gray-600 rounded p-3">
+    <p class="text-2xl font-bold text-[#146b8c]">100+</p>
+    <p class="text-sm text-gray-400">nodes simultaneously</p>
+  </div>
+  <div class="border border-gray-600 rounded p-3">
+    <p class="text-2xl font-bold text-[#146b8c]">≥ 30 FPS</p>
+    <p class="text-sm text-gray-400">real-time constraint</p>
+  </div>
+</div>
+
+<p class="mt-6 text-center text-[#2B90B6] font-semibold">→ The communication technology is critical.</p>
 
 ---
 
-# Comparing FFI with Sockets
+# FFI vs Sockets
+
+<div class="mt-4 grid grid-cols-2 gap-8">
+
+<div class="flex flex-col gap-3">
+  <p class="font-semibold text-[#146b8c]">What was compared</p>
+  <ul class="text-sm text-gray-800 flex flex-col gap-2">
+    <li><strong>Socket-based</strong> — Unity and Collektive as separate processes, communicating via TCP</li>
+    <li><strong>FFI-based</strong> — Collektive compiled as a native shared library, invoked directly by Unity</li>
+  </ul>
+
+  <p class="font-semibold text-[#146b8c] mt-4">Setup</p>
+  <ul class="text-sm text-gray-800 flex flex-col gap-2">
+    <li>12 stationary nodes, identical Unity scenes</li>
+    <li>1000+ execution cycles, first 30 discarded (warm-up)</li>
+    <li>Distance-based gradient propagation as collective program</li>
+  </ul>
+</div>
+
+<div class="flex flex-col gap-3">
+  <p class="font-semibold text-[#146b8c]">Results</p>
+  <table class="text-sm w-full">
+    <thead>
+      <tr class="text-[#146b8c]">
+        <th class="text-left">Metric</th>
+        <th class="text-right">FFI</th>
+        <th class="text-right">Socket</th>
+        <th class="text-right text-yellow-600">Speedup</th>
+      </tr>
+    </thead>
+    <tbody class="text-gray-800">
+      <tr><td>Median e2e</td><td class="text-right">550 µs</td><td class="text-right">200 ms</td><td class="text-right text-yellow-600">363×</td></tr>
+      <tr><td>Mean e2e</td><td class="text-right">484 µs</td><td class="text-right">200 ms</td><td class="text-right text-yellow-600">456×</td></tr>
+      <tr><td>p95 e2e</td><td class="text-right">612 µs</td><td class="text-right">200 ms</td><td class="text-right text-yellow-600">719×</td></tr>
+      <tr><td>p99 e2e</td><td class="text-right">850 µs</td><td class="text-right">202 ms</td><td class="text-right text-yellow-600">747×</td></tr>
+    </tbody>
+  </table>
+
+  <p v-click class="mt-4 text-center text-lg font-bold text-[#146b8c]">
+    FFI is up to <span class="text-yellow-600">747×</span> faster — the only viable choice.
+  </p>
+</div>
+
+</div>
 
 
 ---
