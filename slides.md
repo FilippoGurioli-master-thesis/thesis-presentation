@@ -71,7 +71,7 @@ transition: slide-left
 <div class="mt-6 grid grid-cols-[1fr_auto_1fr] gap-8">
 
 <div class="flex flex-col items-center gap-3">
-  <p class="text-center font-semibold text-blue-400">High-Fidelity Simulators</p>
+  <p class="text-center font-semibold text-yellow-600">High-Fidelity Simulators</p>
   <img src="/unity-logo.png" class="h-16 object-contain" />
   <img src="/gazebo-logo.png" class="h-16 object-contain" />
   <p class="text-sm text-center text-gray-400">Realistic physics, 3D environments<br/>but no collective programming support</p>
@@ -83,13 +83,25 @@ transition: slide-left
 </div>
 
 <div class="flex flex-col items-center gap-3">
-  <p class="text-center font-semibold text-green-400">CAS Simulators</p>
+  <p class="text-center font-semibold text-green-600">CAS Simulators</p>
   <img src="/alchemist-logo.png" class="h-16 object-contain" />
   <img src="/netlogo-logo.jpg" class="h-16 object-contain" />
   <p class="text-sm text-center text-gray-400">Aggregate computing support<br/>but simplified, grid-based environments</p>
 </div>
 
 </div>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 <!--
 Attaccandomi al concetto di validation:
@@ -116,6 +128,19 @@ No good integration between high-fidelity simulators for Complex Adaptive System
     The further right, the more realistic — but the harder to program collective behaviors.
   </p>
 </div>
+
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 <!--
 - Non esiste un simulatore che sia ad alta fedeltà specifico per i CAS
@@ -152,6 +177,17 @@ graph TD
 
 </div>
 
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 <!--
 - Il framework che utilizzerò BE è Collektive: scritto in Kotlin
@@ -192,6 +228,18 @@ A CAS simulation is only meaningful with **enough nodes** — the bridge must be
 </div>
 
 <p class="mt-6 text-center text-[#2B90B6] font-semibold">→ The communication technology is critical.</p>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 <!--
 - I simulatori per i CAS devono essere il più efficienti possibile
@@ -249,6 +297,18 @@ A CAS simulation is only meaningful with **enough nodes** — the bridge must be
 
 </div>
 
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 <!--
 - quindi, tornando alla domanda di prima, perchè FFI?
 - perchè le comunicazioni inter processo come Socket sono molto più lente
@@ -273,6 +333,18 @@ transition: fade-out
     <p class="text-sm text-[#146b8c]">Validated in both a <strong>minimal</strong> and a <strong>rich</strong> environment.</p>
   </div>
 
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 <!--
 - per questo progetto di tesi è stato preso in esempio uno dei casi di studio più classici nell'AC, ascesa di gradiente
 - i nodi devono arrivare all'obiettivo cercando di evitare gli ostacoli
@@ -295,6 +367,18 @@ transition: fade-out
     />
   </div>
 
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 <!--
 - questo è il risultato
@@ -325,6 +409,18 @@ transition: fade-out
 
 </div>
 
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 <!--
 Conclusioni:
 [click]
@@ -341,4 +437,16 @@ class: text-center
 ---
 
 # Thank you
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
 
