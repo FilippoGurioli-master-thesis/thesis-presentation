@@ -57,7 +57,7 @@ h1 {
 
 <!--
 Partendo dal concetto di aggregate programs:
-- definizione di CAS
+- definizione di CAS: complesso di più unità computazionali disgregate nello spazio capaci di adattare il proprio comportamento basandosi sulle interazioni locali e l'ambiente circostante
 - aggregate programming è soluzione per rappresentare CAS
 - Collektive è un framework in Kotlin per aggregate program
 -->
@@ -274,8 +274,7 @@ transition: fade-out
   </div>
 
 <!--
-- è stato fatto un caso di studio sul simulatore prodotto per poter validare le sue capacità
-- la simulazione consiste nell'ascesa di gradiente dei nodi dispiegati all'interno dell'ambiente
+- per questo progetto di tesi è stato preso in esempio uno dei casi di studio più classici nell'AC, ascesa di gradiente
 - i nodi devono arrivare all'obiettivo cercando di evitare gli ostacoli
   - gli ostacoli sono gli altri nodi e gli ostacoli all'interno dell'ambiente (sassi)
 -->
