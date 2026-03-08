@@ -23,6 +23,12 @@ Filippo Gurioli
   </a>
 </div>
 
+<!--
+- Mi presento
+- Leggo il titolo
+- Spiego i concetti principali: reality gap, aggregate program e validation
+-->
+
 ---
 transition: slide-up
 layout: image-right
@@ -48,6 +54,13 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
+
+<!--
+Partendo dal concetto di aggregate programs:
+- definizione di CAS
+- aggregate programming è soluzione per rappresentare CAS
+- Collektive è un framework in Kotlin per aggregate program
+-->
 
 ---
 transition: slide-left
@@ -79,6 +92,14 @@ transition: slide-left
 </div>
 
 <!--
+Attaccandomi al concetto di validation:
+- per validare aggregate program una possibile soluzione sono le simulazioni
+- le simulazioni sono vantaggiose perchè:
+  - più economiche
+  - più veloci
+- esistono 2 macro categorie di simulatori attualmente:
+  - simulatori ad alta fedeltà (di cui Unity è un esempio)
+  - simulatori specifici per i CAS (ad esempio Alchemist)
 -->
 
 ---
@@ -95,6 +116,11 @@ No good integration between high-fidelity simulators for Complex Adaptive System
     The further right, the more realistic — but the harder to program collective behaviors.
   </p>
 </div>
+
+<!--
+- Non esiste un simulatore che sia ad alta fedeltà specifico per i CAS
+- Il mio obiettivo è quindi di creare proprio una conguinzione tra questi due mondi
+-->
 
 ---
 layout: two-cols
@@ -126,6 +152,16 @@ graph TD
 
 </div>
 
+
+<!--
+- Il framework che utilizzerò BE è Collektive: scritto in Kotlin
+- Il framework che utilizzerò FE è Unity: scritto in C#
+- come unire due linguaggi che non condividono nulla?
+- uniche soluzioni: comunicazione inter processo o comunicazione intra processo
+[click1] - soluzione che ho adottato: Foreign Function Interface
+[click1] - perchè?
+-->
+
 ---
 transition: slide-up
 ---
@@ -155,6 +191,15 @@ A CAS simulation is only meaningful with **enough nodes** — the bridge must be
 </div>
 
 <p class="mt-6 text-center text-[#2B90B6] font-semibold">→ The communication technology is critical.</p>
+
+<!--
+- I simulatori per i CAS devono essere il più efficienti possibile
+  - Tanti nodi che eseguono computazioni asincrone sono molto resource intensive
+- Come obiettivo mi sono posto:
+  - almeno 20Hz di frequenza d'esecuzione
+  - almeno 100 nodi nella simulazione
+  - almeno 30 FPS durante la simulazione
+-->
 
 ---
 
@@ -203,6 +248,11 @@ A CAS simulation is only meaningful with **enough nodes** — the bridge must be
 
 </div>
 
+<!--
+- quindi, tornando alla domanda di prima, perchè FFI?
+- perchè le comunicazioni inter processo come Socket sono molto più lente
+[click1] - al 99° percentile è 747 volte più veloce FFI
+-->
 
 ---
 transition: fade-out
@@ -221,6 +271,13 @@ transition: fade-out
     <p class="text-sm text-[#146b8c]">Validated in both a <strong>minimal</strong> and a <strong>rich</strong> environment.</p>
   </div>
 
+<!--
+- è stato fatto un caso di studio sul simulatore prodotto per poter validare le sue capacità
+- la simulazione consiste nell'ascesa di gradiente dei nodi dispiegati all'interno dell'ambiente
+- i nodi devono arrivare all'obiettivo cercando di evitare gli ostacoli
+  - gli ostacoli sono gli altri nodi e gli ostacoli all'interno dell'ambiente (sassi)
+-->
+
 ---
 
 # Case Study: Environment-aware Gradient Ascent
@@ -236,6 +293,11 @@ transition: fade-out
       playsinline
     />
   </div>
+
+
+<!--
+- questo è il risultato
+-->
 
 ---
 transition: fade-out
@@ -261,6 +323,10 @@ transition: fade-out
 </div>
 
 </div>
+
+<!--
+TODO
+-->
 
 ---
 layout: center
