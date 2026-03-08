@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800"
+   height="300"
+   viewBox="0 0 800 300"
+   version="1.1"
+   id="svg33"
+   sodipodi:docname="reality-gap-spectrum.svg"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview33"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="2.0164307"
+     inkscape:cx="505.3484"
+     inkscape:cy="134.64386"
+     inkscape:window-width="1814"
+     inkscape:window-height="938"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg33" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="sg"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="0%">
+      <stop
+         offset="0%"
+         stop-color="#3B82F6"
+         id="stop1" />
+      <stop
+         offset="0.23650543"
+         stop-color="#A5C8FF"
+         id="stop2" />
+      <stop
+         offset="0.43274826"
+         stop-color="#A8E6C8"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#F97316"
+         id="stop4" />
+    </linearGradient>
+    <filter
+       id="sh"
+       x="-0.0050675676"
+       y="-0.0096153846"
+       width="1.0101351"
+       height="1.0192308">
+      <feDropShadow
+         dx="0"
+         dy="2"
+         stdDeviation="3"
+         flood-color="#00000020" />
+    </filter>
+  </defs>
+  <rect
+     width="800"
+     height="300"
+     fill="#FAFAFA"
+     id="rect4" />
+  <rect
+     x="80"
+     y="58"
+     width="640"
+     height="26"
+     rx="13"
+     fill="url(#sg)"
+     filter="url(#sh)"
+     id="rect5" />
+  <text
+     x="87.245522"
+     y="52.43465"
+     font-family="Georgia, serif"
+     font-size="11.7357px"
+     fill="#3b82f6"
+     text-anchor="middle"
+     font-style="italic"
+     id="text5"
+     transform="scale(1.0170062,0.98327818)"
+     style="stroke-width:1.23534">High scalability</text>
+  <text
+     x="770.13495"
+     y="47.011864"
+     font-family="Georgia, serif"
+     font-size="13.4849px"
+     fill="#f97316"
+     text-anchor="middle"
+     font-style="italic"
+     id="text6"
+     transform="scale(0.92370984,1.082591)"
+     style="stroke-width:1.41947">High realism</text>
+  <line
+     x1="80"
+     y1="100"
+     x2="720"
+     y2="100"
+     stroke="#CBD5E1"
+     stroke-width="1.2"
+     stroke-dasharray="4,3"
+     id="line6" />
+  <polygon
+     points="68,96 68,104 80,100"
+     fill="#CBD5E1"
+     id="polygon6" />
+  <polygon
+     points="732,96 732,104 720,100"
+     fill="#CBD5E1"
+     id="polygon7" />
+  <text
+     x="486.16083"
+     y="107.09396"
+     font-family="Georgia, serif"
+     font-size="11.153px"
+     fill="#94a3b8"
+     text-anchor="middle"
+     font-style="italic"
+     id="text7"
+     transform="scale(0.92496886,1.0811175)"
+     style="stroke-width:1.23922">increasing physical fidelity</text>
+  <line
+     x1="140"
+     y1="57"
+     x2="140"
+     y2="86"
+     stroke="#3B82F6"
+     stroke-width="2"
+     id="line7" />
+  <circle
+     cx="140"
+     cy="71"
+     r="6"
+     fill="#3B82F6"
+     id="circle7" />
+  <line
+     x1="361.35068"
+     y1="57"
+     x2="361.35068"
+     y2="86"
+     stroke="#10b981"
+     stroke-width="2.5"
+     id="line8" />
+  <circle
+     cx="361.58493"
+     cy="71.468475"
+     r="8"
+     fill="#10b981"
+     id="circle8" />
+  <line
+     x1="537.98163"
+     y1="57"
+     x2="537.98163"
+     y2="86"
+     stroke="#f97316"
+     stroke-width="1.8"
+     stroke-opacity="0.7"
+     id="line9" />
+  <circle
+     cx="537.98163"
+     cy="71.468475"
+     r="5.5"
+     fill="#f97316"
+     fill-opacity="0.7"
+     id="circle9" />
+  <line
+     x1="670"
+     y1="57"
+     x2="670"
+     y2="86"
+     stroke="#F97316"
+     stroke-width="2"
+     id="line10" />
+  <circle
+     cx="670"
+     cy="71"
+     r="6"
+     fill="#F97316"
+     id="circle10" />
+  <rect
+     x="44"
+     y="128"
+     width="172"
+     height="88"
+     rx="7"
+     fill="white"
+     stroke="#BFDBFE"
+     stroke-width="1.5"
+     filter="url(#sh)"
+     id="rect10" />
+  <rect
+     x="44"
+     y="128"
+     width="172"
+     height="24"
+     rx="7"
+     fill="#EFF6FF"
+     id="rect11" />
+  <rect
+     x="44"
+     y="143"
+     width="172"
+     height="9"
+     fill="#EFF6FF"
+     id="rect12" />
+  <rect
+     x="247.30917"
+     y="142.59457"
+     width="210.88356"
+     height="9"
+     fill="#eff6ff"
+     id="rect12-6"
+     style="stroke-width:1.10728;fill:#edfdf6;fill-opacity:1" />
+  <text
+     x="130"
+     y="145"
+     font-family="Georgia,serif"
+     font-size="11"
+     font-weight="bold"
+     fill="#1D4ED8"
+     text-anchor="middle"
+     id="text12">Abstract Simulators</text>
+  <text
+     x="130"
+     y="163"
+     font-family="Georgia,serif"
+     font-size="9.5"
+     fill="#475569"
+     text-anchor="middle"
+     id="text13">NetLogo, Alchemist</text>
+  <text
+     x="130"
+     y="178"
+     font-family="Georgia,serif"
+     font-size="9"
+     fill="#64748B"
+     text-anchor="middle"
+     font-style="italic"
+     id="text14">Grid / metadata agents</text>
+  <text
+     x="130"
+     y="193"
+     font-family="Georgia, serif"
+     font-size="9px"
+     fill="#64748b"
+     text-anchor="middle"
+     font-style="italic"
+     id="text15">Millions of nodes</text>
+  <line
+     x1="140"
+     y1="118"
+     x2="130"
+     y2="128"
+     stroke="#BFDBFE"
+     stroke-width="1.5"
+     stroke-dasharray="3,2"
+     id="line15" />
+  <rect
+     x="246.68387"
+     y="122.93694"
+     width="212"
+     height="104"
+     rx="7"
+     fill="#ffffff"
+     stroke="#6ee7b7"
+     stroke-width="2"
+     filter="url(#sh)"
+     id="rect15"
+     transform="matrix(1.0005497,0,0,0.88647648,-0.1938628,13.886384)" />
+  <rect
+     x="247.38658"
+     y="122.70271"
+     width="210.67494"
+     height="26"
+     rx="6.9562483"
+     fill="#ecfdf5"
+     id="rect16"
+     style="stroke-width:0.99687" />
+  <text
+     x="351.74692"
+     y="140.46848"
+     font-family="Georgia, serif"
+     font-size="12px"
+     font-weight="bold"
+     fill="#047857"
+     text-anchor="middle"
+     id="text17">Collektivity (this thesis)</text>
+  <text
+     x="344.25128"
+     y="161.81085"
+     font-family="Georgia, serif"
+     font-size="9.5px"
+     fill="#475569"
+     text-anchor="middle"
+     id="text18">Unity + Collektive</text>
+  <text
+     x="348.46759"
+     y="173.53152"
+     font-family="Georgia, serif"
+     font-size="9px"
+     fill="#64748b"
+     text-anchor="middle"
+     font-style="italic"
+     id="text19">3D physics-accurate agents</text>
+  <text
+     x="349.40454"
+     y="184.31523"
+     font-family="Georgia, serif"
+     font-size="9px"
+     fill="#64748b"
+     text-anchor="middle"
+     font-style="italic"
+     id="text20">Aggregate programming logic</text>
+  <text
+     x="347.99911"
+     y="196.0359"
+     font-family="Georgia, serif"
+     font-size="9px"
+     fill="#64748b"
+     text-anchor="middle"
+     font-style="italic"
+     id="text21">100 nodes, real-time</text>
+  <line
+     x1="362.05341"
+     y1="112"
+     x2="362.05341"
+     y2="122"
+     stroke="#6ee7b7"
+     stroke-width="2"
+     stroke-dasharray="3, 2"
+     id="line22" />
+  <rect
+     x="472"
+     y="128"
+     width="152"
+     height="88"
+     rx="7"
+     fill="white"
+     stroke="#FED7AA"
+     stroke-width="1.5"
+     filter="url(#sh)"
+     id="rect22" />
+  <rect
+     x="472"
+     y="128"
+     width="152"
+     height="24"
+     rx="7"
+     fill="#FFF7ED"
+     id="rect23" />
+  <rect
+     x="472"
+     y="143"
+     width="152"
+     height="9"
+     fill="#FFF7ED"
+     id="rect24" />
+  <text
+     x="548"
+     y="145"
+     font-family="Georgia,serif"
+     font-size="10.5"
+     font-weight="bold"
+     fill="#C2410C"
+     text-anchor="middle"
+     id="text24">HIL / Mixed Reality</text>
+  <text
+     x="548"
+     y="163"
+     font-family="Georgia,serif"
+     font-size="9.5"
+     fill="#475569"
+     text-anchor="middle"
+     id="text25">Gazebo, ARGoS</text>
+  <text
+     x="548"
+     y="178"
+     font-family="Georgia,serif"
+     font-size="9"
+     fill="#64748B"
+     text-anchor="middle"
+     font-style="italic"
+     id="text26">Partial real hardware</text>
+  <text
+     x="548"
+     y="193"
+     font-family="Georgia,serif"
+     font-size="9"
+     fill="#64748B"
+     text-anchor="middle"
+     font-style="italic"
+     id="text27">High fidelity, limited scale</text>
+  <line
+     x1="545.5965"
+     y1="107.97907"
+     x2="557.4845"
+     y2="129.58835"
+     stroke="#fed7aa"
+     stroke-width="2.35005"
+     stroke-dasharray="3, 2"
+     id="line27" />
+  <rect
+     x="628"
+     y="128"
+     width="148"
+     height="88"
+     rx="7"
+     fill="white"
+     stroke="#FDBA74"
+     stroke-width="1.5"
+     filter="url(#sh)"
+     id="rect27" />
+  <rect
+     x="628"
+     y="128"
+     width="148"
+     height="24"
+     rx="7"
+     fill="#FFF4E5"
+     id="rect28" />
+  <rect
+     x="628"
+     y="143"
+     width="148"
+     height="9"
+     fill="#FFF4E5"
+     id="rect29" />
+  <text
+     x="702"
+     y="145"
+     font-family="Georgia,serif"
+     font-size="10.5"
+     font-weight="bold"
+     fill="#EA580C"
+     text-anchor="middle"
+     id="text29">Physical Hardware</text>
+  <text
+     x="702"
+     y="163"
+     font-family="Georgia,serif"
+     font-size="9.5"
+     fill="#475569"
+     text-anchor="middle"
+     id="text30">Robot swarms, IoT</text>
+  <text
+     x="702"
+     y="178"
+     font-family="Georgia,serif"
+     font-size="9"
+     fill="#64748B"
+     text-anchor="middle"
+     font-style="italic"
+     id="text31">Maximum realism</text>
+  <text
+     x="702"
+     y="193"
+     font-family="Georgia,serif"
+     font-size="9"
+     fill="#64748B"
+     text-anchor="middle"
+     font-style="italic"
+     id="text32">Expensive, hard to reproduce</text>
+  <line
+     x1="670"
+     y1="118"
+     x2="702"
+     y2="128"
+     stroke="#FDBA74"
+     stroke-width="1.5"
+     stroke-dasharray="3,2"
+     id="line32" />
+</svg>

@@ -50,7 +50,7 @@ h1 {
 </style>
 
 ---
-transition: fade-out
+transition: slide-left
 ---
 
 # Simulation Landscape
@@ -90,7 +90,7 @@ transition: slide-left
 No good integration between high-fidelity simulators for Complex Adaptive Systems
 
 <div class="flex flex-col items-center gap-4 mt-4">
-  <img src="/reality-gap-spectrum.png" class="w-full object-contain" />
+  <img src="/reality-gap-spectrum.svg" class="w-full object-contain" />
   <p class="text-center text-gray-400 text-sm">
     The further right, the more realistic — but the harder to program collective behaviors.
   </p>
@@ -236,23 +236,29 @@ A CAS simulation is only meaningful with **enough nodes** — the bridge must be
 </div>
 
 ---
-
-# Results
-
-Talk about data.
-
-The <span v-mark.red="1"><code>v-mark</code> directive</span>
-also allows you to add
-<span v-mark.circle.orange="2">inline marks</span>
-, powered by [Rough Notation](https://roughnotation.com/):
-
+transition: fade-out
 ---
 
 # Conclusions
 
-- what was proven
-- a weakness
-- future work
+<div class="mt-6 flex flex-col gap-6">
+
+<div v-click class="border-l-4 border-[#2B90B6] pl-4">
+  <p class="font-semibold text-[#2B90B6]">Proven</p>
+  <p class="text-sm text-gray-800">Game engines are viable high-fidelity platforms for CAS validation. FFI-based communication reduces inter-language latency to negligible levels, and the rich environment surfaces physical edge cases that abstract simulators never expose.</p>
+</div>
+
+<div v-click class="border-l-4 border-yellow-500 pl-4">
+  <p class="font-semibold text-yellow-600">Limitation</p>
+  <p class="text-sm text-gray-800">Execution is globally synchronous — every node fires at the same tick. Real CAS deployments are asynchronous, so failure modes under heterogeneous round frequencies remain untested.</p>
+</div>
+
+<div v-click class="border-l-4 border-green-500 pl-4">
+  <p class="font-semibold text-green-600">Future Work</p>
+  <p class="text-sm text-gray-800">Transition to a per-node asynchronous model — the most impactful step toward closing the remaining gap between simulation and physical deployment.</p>
+</div>
+
+</div>
 
 ---
 layout: center
