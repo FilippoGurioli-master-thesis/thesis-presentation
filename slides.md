@@ -158,8 +158,9 @@ graph TD
 - Il framework che utilizzerò FE è Unity: scritto in C#
 - come unire due linguaggi che non condividono nulla?
 - uniche soluzioni: comunicazione inter processo o comunicazione intra processo
-[click1] - soluzione che ho adottato: Foreign Function Interface
-[click1] - perchè?
+[click]
+- soluzione che ho adottato: Foreign Function Interface
+- perchè?
 -->
 
 ---
@@ -251,7 +252,8 @@ A CAS simulation is only meaningful with **enough nodes** — the bridge must be
 <!--
 - quindi, tornando alla domanda di prima, perchè FFI?
 - perchè le comunicazioni inter processo come Socket sono molto più lente
-[click1] - al 99° percentile è 747 volte più veloce FFI
+[click]
+- al 99° percentile è 747 volte più veloce FFI
 -->
 
 ---
@@ -325,7 +327,13 @@ transition: fade-out
 </div>
 
 <!--
-TODO
+Conclusioni:
+[click]
+abbiamo capito che i game engine possono effettivamente essere utilizzati come CAS validator. Utilizzare FFI è un ottimo modo per poter mantenere una comunicazione veloce anche tra due linguaggi molto diversi.
+[click]
+problema: l'esecuzione è ancora sincrona, non modella nel modo migliore possibile i CAS
+[click]
+sviluppi futuri: sviluppare una computazione asincrona per ogni nodo
 -->
 
 ---
