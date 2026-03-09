@@ -356,17 +356,15 @@ h1 {
 
 # Case Study: Environment-aware Gradient Ascent
 
-  <div class="flex items-center justify-center">
-      <!-- src="https://media.istockphoto.com/id/532142106/it/video/ronzio-serie.mp4?s=mp4-640x640-is&k=20&c=TL5jXPB3M9uge9c1AZgDxTvb3i2BX9pPsOM4v1i9pLg=" -->
-  <video
-      src="/case-study.mp4"
-      class="rounded-lg w-full"
-      autoplay
-      loop
-      muted
-      playsinline
-    />
-  </div>
+<div class="flex items-center justify-center">
+<SlidevVideo autoplay controls class="rounded-lg w-190">
+  <source src="/case-study-2.mp4" type="video/mp4" />
+  <p>
+    Your browser does not support videos. You may download it
+    <a href="/case-study-2.mp4">here</a>.
+  </p>
+</SlidevVideo>
+</div>
 
 
 <style>
