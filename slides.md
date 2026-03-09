@@ -9,6 +9,7 @@ drawings:
 transition: slide-left
 comark: true
 duration: 10min
+favicon: /favicon.ico
 ---
 
 # Lowering the Reality Gap in Aggregate Programs Validation: Running Collektive Over Unity
