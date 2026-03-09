@@ -40,7 +40,7 @@ image: https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmFyMWFnbnJpMDNwaGkzOHN
 
 Modern computing is shifting from isolated machines to **massively interconnected collectives** — IoT networks, smart cities, drone swarms.
 
-These are **Complex Adaptive Systems (CAS)**: thousands of agents coordinating through local interactions, with no central controller.
+These are **Collective Adaptive Systems (CAS)**: thousands of agents coordinating through local interactions, with no central controller.
 
 > Testing them requires simulation — but not all simulators are equal.
 
@@ -121,7 +121,7 @@ transition: slide-left
 
 # Problem Statement
 
-No good integration between high-fidelity simulators for Complex Adaptive Systems
+No good integration between high-fidelity simulators for Collective Adaptive Systems
 
 <div class="flex flex-col items-center gap-4 mt-4">
   <img src="/reality-gap-spectrum.svg" class="w-full object-contain" />
