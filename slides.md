@@ -24,6 +24,18 @@ Filippo Gurioli
   </a>
 </div>
 
+<style>
+h1 {
+  background-color: #ffffff;
+  background-image: none;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 <!--
 - Mi presento
 - Leggo il titolo
@@ -40,21 +52,9 @@ image: https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmFyMWFnbnJpMDNwaGkzOHN
 
 Modern computing is shifting from isolated machines to **massively interconnected collectives** — IoT networks, smart cities, drone swarms.
 
-These are **Collective Adaptive Systems (CAS)**: thousands of agents coordinating through local interactions, with no central controller.
+These are **Collective Adaptive Systems (CAS)**: thousands of agents coordinating through **local interactions and surrounding environment**, with no central controller.
 
-> Testing them requires simulation — but not all simulators are equal.
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
+> A way of testing them requires simulation — but not all simulators are equal.
 
 <!--
 Partendo dal concetto di aggregate programs:
@@ -73,7 +73,7 @@ transition: slide-left
 
 <div class="flex flex-col items-center gap-3">
   <p class="text-center font-semibold text-yellow-600">High-Fidelity Simulators</p>
-  <img src="/unity-logo.png" class="h-16 object-contain" />
+  <img src="/webots-logo.png" class="h-16 object-contain" />
   <img src="/gazebo-logo.png" class="h-16 object-contain" />
   <p class="text-sm text-center text-gray-400">Realistic physics, 3D environments<br/>but no collective programming support</p>
 </div>
@@ -91,18 +91,6 @@ transition: slide-left
 </div>
 
 </div>
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
 
 <!--
 Attaccandomi al concetto di validation:
@@ -130,19 +118,6 @@ No good integration between high-fidelity simulators for Collective Adaptive Sys
   </p>
 </div>
 
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
 <!--
 - Non esiste un simulatore che sia ad alta fedeltà specifico per i CAS
 - Il mio obiettivo è quindi di creare proprio una conguinzione tra questi due mondi
@@ -156,16 +131,16 @@ transition: slide-up
 # Solution
 
 - **Unity Frontend** — 3D physics environment
-- **Core Bridge** — <span v-if="$clicks < 1">???</span><span v-click="1">Foreign Function Interface (FFI) + Protocol Buffers</span>
+- **Core Bridge** — Foreign Function Interface (FFI) + Protocol Buffers
 - **Collektive Backend** — aggregate logic
 
-<p v-click="1" class="mt-4 text-[#2B90B6] font-semibold">But why FFI?</p>
+<p class="mt-4 text-[#2B90B6] font-semibold">But why FFI?</p>
 
 ::right::
 
 <div class="flex h-full items-center justify-center">
 
-```mermaid {theme: 'neutral', scale: 1.2}
+```mermaid {theme: 'base', scale: 1.2}
 graph TD
   A[Unity Frontend]
   B[Core Bridge]
@@ -178,24 +153,11 @@ graph TD
 
 </div>
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
 <!--
 - Il framework che utilizzerò BE è Collektive: scritto in Kotlin
 - Il framework che utilizzerò FE è Unity: scritto in C#
 - come unire due linguaggi che non condividono nulla?
 - uniche soluzioni: comunicazione inter processo o comunicazione intra processo
-[click]
 - soluzione che ho adottato: Foreign Function Interface
 - perchè?
 -->
@@ -229,18 +191,6 @@ A CAS simulation is only meaningful with **enough nodes** — the bridge must be
 </div>
 
 <p class="mt-6 text-center text-[#2B90B6] font-semibold">→ The communication technology is critical.</p>
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
 
 <!--
 - I simulatori per i CAS devono essere il più efficienti possibile
@@ -298,18 +248,6 @@ h1 {
 
 </div>
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
 <!--
 - quindi, tornando alla domanda di prima, perchè FFI?
 - perchè le comunicazioni inter processo come Socket sono molto più lente
@@ -334,18 +272,6 @@ transition: fade-out
     <p class="text-sm text-[#146b8c]">Validated in both a <strong>minimal</strong> and a <strong>rich</strong> environment.</p>
   </div>
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
 <!--
 - per questo progetto di tesi è stato preso in esempio uno dei casi di studio più classici nell'AC, ascesa di gradiente
 - i nodi devono arrivare all'obiettivo cercando di evitare gli ostacoli
@@ -367,17 +293,6 @@ h1 {
 </div>
 
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
 
 <!--
 - questo è il risultato
@@ -408,18 +323,6 @@ transition: fade-out
 
 </div>
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
 <!--
 Conclusioni:
 [click]
@@ -436,16 +339,4 @@ class: text-center
 ---
 
 # Thank you
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
 
