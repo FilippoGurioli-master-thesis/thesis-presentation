@@ -284,7 +284,7 @@ transition: fade-out
 
 <div class="flex items-center justify-center">
 <SlidevVideo autoplay controls class="rounded-lg w-190">
-  <source src="/case-study-2.mp4" type="video/mp4" />
+  <source src="/case-study.mp4" type="video/mp4" />
   <p>
     Your browser does not support videos. You may download it
     <a href="/case-study-2.mp4">here</a>.
